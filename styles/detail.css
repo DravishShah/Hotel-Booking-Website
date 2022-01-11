@@ -1,10 +1,12 @@
-html,
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
 .content-div img {
   height: 500px;
   width: 500px;
+}
+
+.content-div {
+  margin: 2% 4% 0% 4%;
+}
+
+.info {
+  margin: 2% 0 2% 0;
 }

@@ -1,5 +1,10 @@
-html {
+html,
+body {
+  height: 100vh;
+  width: 100vw;
   scroll-behavior: smooth;
+  margin: 0px;
+  background-color: #e0e0e0;
 }
 #logo {
   height: 60px;
@@ -8,4 +13,8 @@ html {
 .social-media img {
   height: 20px;
   width: 22px;
+}
+header,
+footer {
+  background-color: rosybrown;
 }
