@@ -5,6 +5,11 @@ body {
   scroll-behavior: smooth;
   margin: 0px;
   background-color: #e0e0e0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.content-div {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 #logo {
   height: 60px;
@@ -16,5 +21,40 @@ body {
 }
 header,
 footer {
+  position: fixed;
+  width: 100%;
   background-color: rosybrown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  height: 9%;
+  top: 0;
+}
+footer {
+  left: 0;
+  bottom: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  margin-right: 1%;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-us {
+  margin-left: 1%;
+}
+.social-media {
+  margin-right: 1%;
+}
+.copyRight {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  font-size: 12px;
 }
