@@ -12,6 +12,7 @@ body {
   padding-bottom: 5%;
 }
 #logo {
+  margin-left: 2%;
   height: 60px;
   width: 60px;
 }
@@ -33,6 +34,7 @@ header {
   top: 0;
 }
 footer {
+  height: 7%;
   left: 0;
   bottom: 0;
 }
@@ -40,7 +42,7 @@ footer {
 header a {
   text-decoration: none;
   color: black;
-  margin-right: 1%;
+  margin-right: 2%;
 }
 footer a {
   text-decoration: none;
@@ -48,13 +50,11 @@ footer a {
 }
 
 .contact-us {
-  margin-left: 1%;
+  margin-left: 2%;
 }
 .social-media {
-  margin-right: 1%;
+  margin-right: 2%;
 }
 .copyRight {
-  margin-top: 30px;
-  padding-bottom: 10px;
   font-size: 12px;
 }

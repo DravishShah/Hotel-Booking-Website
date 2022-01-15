@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/detail.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <title>Details | Hotel Booking Website</title>
   </head>
   <body>
@@ -17,50 +20,83 @@
         <a href="/login.html">Login</a>
       </header>
       <div class="content-div">
-        <img
-          src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-          alt="Radisson Blu Hotel"
-        />
-        <div class="book-now">
-          <form action="/payment.html">
-            <label for="adults">Adults:</label>
-            <input
-              type="number"
-              id="adults"
-              name="adults"
-              value="1"
-              min="1"
-              required
-            /><br />
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter Name"
-              autocomplete="off"
-              required
-            /><br />
-            <label for="checkin">From Date:</label>
-            <input type="date" id="checkin" name="checkin" required /><br />
-            <label for="checkout">To Date:</label>
-            <input type="date" id="checkout" name="checkout" required /><br />
-            <label for="price">Total:</label>
-            <input
-              type="text"
-              name="price"
-              id="price"
-              value=""
-              readonly
-            /><br />
-            <input type="submit" value="Book Now" />
-          </form>
+        <div class="booking-info">
+          <div class="image">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+              alt="Radisson Blu Hotel"
+            />
+          </div>
+          <div class="book-now">
+            <form action="/payment.html">
+              <div class="row">
+                <div class="col-25"><label for="adults">Adults:</label></div>
+                <div class="col-75">
+                  <input
+                    type="number"
+                    id="adults"
+                    name="adults"
+                    value="1"
+                    min="1"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25"><label for="name">Name:</label></div>
+                <div class="col-75">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Name"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="checkin">From Date: </label>
+                </div>
+                <div class="col-75">
+                  <input type="date" id="checkin" name="checkin" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="checkout">To Date: </label>
+                </div>
+                <div class="col-75">
+                  <input type="date" id="checkout" name="checkout" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25"><label for="price">Total:</label></div>
+                <div class="col-75">
+                  <input
+                    type="text"
+                    name="price"
+                    id="price"
+                    value=""
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25"></div>
+                <div class="col-75">
+                  <input type="submit" value="Book Now" />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="info">
           <h2>Radisson Blu Hotel</h2>
-          <p>RATING</p>
+          <h3>RATING</h3>
           <p>5 Star</p>
-          <p>AMENITIES</p>
+          <h3>AMENITIES</h3>
           <ul>
             <li>Room Service</li>
             <li>Restaurant</li>

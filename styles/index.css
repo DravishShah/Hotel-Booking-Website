@@ -3,16 +3,11 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.place-cards img {
-  height: 150px;
-  width: 150px;
-  border-radius: 15%;
-}
 
 .search-engine {
   padding-top: 1%;
   background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-  height: 380px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,15 +24,20 @@ body {
   border-radius: 12px;
   padding-left: 10px;
   font-size: 16px;
+  outline: none;
 }
 
 .place-cards {
+  height: 300px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 15%;
-  margin-right: 15%;
-  padding: 4%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  color: #f1f1f1;
+}
+.place-cards a {
+  text-decoration: none;
+  color: #f1f1f1;
 }
 .more-option {
   display: flex;
@@ -49,4 +49,82 @@ body {
 .more-option a {
   text-decoration: none;
   color: black;
+}
+span {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 25%;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card1 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card2 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+#card3 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+#card4 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+
+#card1 p {
+  opacity: 0;
+}
+#card1:hover p {
+  opacity: 1;
+}
+#card1:hover span {
+  opacity: 1;
+}
+#card2 p,
+#card3 p,
+#card4 p {
+  opacity: 0;
+}
+
+#card2:hover > span,
+#card3:hover span,
+#card4:hover span {
+  opacity: 1;
+}
+
+#card2:hover p,
+#card3:hover p,
+#card4:hover p {
+  opacity: 1;
 }

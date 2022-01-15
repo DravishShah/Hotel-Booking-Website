@@ -1,12 +1,79 @@
-.content-div img {
-  height: 500px;
-  width: 500px;
-}
-
 .content-div {
   margin: 2% 4% 0% 4%;
 }
 
 .info {
   margin: 2% 0 2% 0;
+}
+
+.booking-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.image {
+  border-left: 1px solid black;
+  padding-left: 100px;
+  width: 70%;
+}
+.book-now {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image,
+.book-now {
+  align-content: center;
+  height: 350px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 1%;
+}
+.image img {
+  max-height: 350px;
+  padding-left: 18.75%;
+}
+.col-25 {
+  float: left;
+  width: 30%;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+}
+.row {
+  padding: 5% 5% 4% 0;
+}
+label {
+  padding: 5px 5px 0px 20px;
+  /* display: inline-block; */
+  float: left;
+}
+input[type='text'],
+input[type='date'],
+input[type='number'] {
+  width: 70%;
+
+  float: right;
+}
+
+input[type='submit'] {
+  float: right;
+  padding: 7px;
+  width: 30%;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.info h3,
+h5 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
 }
