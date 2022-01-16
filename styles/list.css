@@ -70,3 +70,6 @@ body {
 .view {
   margin-top: 2%;
 }
+.stars-active {
+  color: orange;
+}

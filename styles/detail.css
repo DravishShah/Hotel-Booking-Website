@@ -91,3 +91,16 @@ h5 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
+
+.stars-active {
+  color: orange;
+}
+
+.stars {
+  padding-bottom: 1%;
+}
+
+.carousel-control-prev-icon .carousel-control-next {
+  width: 100px;
+  fill: red;
+}
