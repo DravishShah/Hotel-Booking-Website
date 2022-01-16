@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/payment.css" />
     <link
@@ -17,7 +23,14 @@
         <a href="/index.html"
           ><img id="logo" src="assests/images/logo.png" alt="logo"
         /></a>
-        <a href="/login.html">Login</a>
+        <button
+          type="button"
+          class="btn btn-light btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#login"
+        >
+          LOGIN
+        </button>
       </header>
       <div class="content-div">
         <div class="hotel-detail">
@@ -47,12 +60,21 @@
             </p>
             <p><span class="font-style">Total Amount:</span> Rs. 20000</p>
           </div>
-          <a href="/payment.html">Pay Now</a>
+          <button type="button" class="btn btn-success" disabled>
+            Pay Now
+          </button>
         </div>
       </div>
       <footer>
         <div class="contact-us">
-          <a href="/contact.html">Contact Us</a>
+          <button
+            type="button"
+            class="btn btn-info btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#contactUs"
+          >
+            Contact Us
+          </button>
         </div>
         <div class="copyRight">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
         <div class="social-media">
@@ -68,5 +90,130 @@
         </div>
       </footer>
     </div>
+
+    <!-- All Bootstrap code will be here -->
+    <!-- Modal for LOGIN -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form data-toggle="validator">
+              <div class="row mb-3">
+                <label for="username" class="col-sm-2 col-form-label"
+                  >Username:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Enter your Username"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"
+                  >Password:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword3"
+                    placeholder="Enter your Password"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="index.html"
+              ><button type="submit" class="btn btn-primary mx-auto">
+                Login
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Contact Us -->
+
+    <div
+      class="modal fade"
+      id="contactUs"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contact-us">Get In Touch</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for reaching out!!!</p>
+            <p>Please enter your email and we will get back to you.</p>
+            <form>
+              <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label"
+                  >Email:</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="index.html"
+              ><button type="submit" class="btn btn-primary">Submit</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootsrap code Ends -->
+    <!-- Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

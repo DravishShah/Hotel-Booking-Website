@@ -35,7 +35,7 @@
 
 .payment-detail a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
   margin-left: 2%;
 }
 
@@ -51,6 +51,6 @@
 }
 
 .font-style {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
 }

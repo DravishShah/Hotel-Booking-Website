@@ -3,7 +3,9 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
+.content-div {
+  background-color: #e0e0e0;
+}
 .list-hotel img {
   height: 200px;
   width: 250px;
@@ -19,36 +21,52 @@ body {
   justify-content: space-evenly;
 }
 
+.list-hotel.active > div {
+  margin: 5%;
+  background-color: lightgray;
+  width: 40%;
+}
+.list-hotel.active a {
+  background-color: lightgray;
+  width: 40%;
+}
+.list-hotel.active a {
+  text-decoration: none;
+  color: black;
+}
+
 .list-hotel {
+  display: none;
+}
+.list-hotel.active {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.list-hotel > div {
-  margin: 5%;
-  background-color: lightgray;
-  width: 40%;
-}
-.list-hotel a {
-  background-color: lightgray;
-  width: 40%;
-}
-a {
-  text-decoration: none;
-  color: black;
+.map-view {
+  display: none;
 }
 
-#mapView {
-  display: none;
-  padding-left: 2%;
+.map-view.active {
+  display: block;
+  margin-left: 2%;
 }
 
 .hotel-detail {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .info {
   margin-left: 3%;
+}
+
+.list-hotel.active .hotel-detail:hover {
+  background-color: rosybrown;
+}
+
+.view {
+  margin-top: 2%;
 }

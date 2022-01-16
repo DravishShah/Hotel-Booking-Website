@@ -5,7 +5,7 @@ body {
   scroll-behavior: smooth;
   margin: 0px;
   background-color: #e0e0e0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .content-div {
   padding-top: 5%;
@@ -34,27 +34,26 @@ header {
   top: 0;
 }
 footer {
-  height: 7%;
+  height: 8%;
   left: 0;
   bottom: 0;
 }
 
-header a {
-  text-decoration: none;
-  color: black;
+header button {
   margin-right: 2%;
 }
-footer a {
-  text-decoration: none;
-  color: black;
-}
-
-.contact-us {
+footer button {
+  width: 100%;
   margin-left: 2%;
 }
+
 .social-media {
   margin-right: 2%;
 }
 .copyRight {
   font-size: 12px;
+}
+
+.contact-us {
+  margin-left: 2%;
 }
