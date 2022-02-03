@@ -5,6 +5,7 @@ body {
 }
 
 .content-div {
+  height: auto;
   background-color: #e0e0e0;
   padding-bottom: 7%;
 }
@@ -35,6 +36,7 @@ body {
 .place-cards {
   height: 300px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
@@ -99,6 +101,42 @@ span {
   border-radius: 25%;
   box-shadow: 10px 10px 10px grey;
 }
+#card5 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+#card6 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+#card7 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
+#card8 {
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+  box-shadow: 10px 10px 10px grey;
+}
 
 #card1 p {
   opacity: 0;
@@ -111,18 +149,30 @@ span {
 }
 #card2 p,
 #card3 p,
-#card4 p {
+#card4 p,
+#card5 p,
+#card6 p,
+#card7 p,
+#card8 p {
   opacity: 0;
 }
 
-#card2:hover > span,
+#card2:hover span,
 #card3:hover span,
-#card4:hover span {
+#card4:hover span,
+#card5:hover span,
+#card6:hover span,
+#card7:hover span,
+#card8:hover span {
   opacity: 1;
 }
 
 #card2:hover p,
 #card3:hover p,
-#card4:hover p {
+#card4:hover p,
+#card5:hover p,
+#card6:hover p,
+#card7:hover p,
+#card8:hover p {
   opacity: 1;
 }
